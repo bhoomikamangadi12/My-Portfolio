@@ -17,13 +17,13 @@ const AddProjects: React.FC = () => {
   return (
     <div>
       <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
-        <input
+        {/* <input
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Project Title"
           className="border p-2 w-full"
           required
-        />
+        /> */}
         <input
           value={tech}
           onChange={(e) => setTech(e.target.value)}
