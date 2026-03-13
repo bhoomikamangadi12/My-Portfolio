@@ -1,8 +1,10 @@
 // backend/server.js
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const projectRoutes = require("./routes/projectRoute");
+import express from "express";
+import mongoose from "mongoose";
+import cors from "cors";
+// import projectRoutes from "./routes/projectRoute.js";
+import projectRoutes from "./src/routes/projectRoute.js";
+import sectionRoutes from "./src/routes/sectionRoute.js"
 
 const app = express();
 const PORT = 5000;
@@ -22,6 +24,7 @@ mongoose
 
 // Routes
 app.use("/api/projects", projectRoutes);
+app.use("/api/sections", sectionRoutes);
 
 // Start server
 app.listen(PORT, () =>

@@ -7,10 +7,15 @@ const API = axios.create({
 
 // Example: get sections for your header
 export const getSections = async () => {
-  const response = await API.get("/api/section");
-  console.log(response?.data?.sections,"getsectionapi");
-  
-  return response?.data?.sections;
+  try {
+    const response = await API.get("/api/sections");
+    console.log("Full response:", response);
+    console.log("Response data:", response?.data);
+    return response?.data?.sections;
+  } catch (error) {
+    console.error("API Error:", error);
+    throw error;
+  }
 };
 
 export const getProjects = async () => {

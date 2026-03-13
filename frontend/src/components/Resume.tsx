@@ -19,7 +19,7 @@ const Resume: React.FC = () => {
           {/* Download Button */}
           <div className="flex justify-center mb-8">
             <a
-              href="/files/Resume.pdf"
+              href="/files/Bhoomika_Angadi_Resume.pdf"
               download
               className="px-8 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
             >
