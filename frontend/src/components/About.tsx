@@ -18,14 +18,14 @@ const About: React.FC = () => {
           <div>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 10, fontSize: 11, letterSpacing: "2px", textTransform: "uppercase", color: "#c8a96e", marginBottom: "1.5rem" }}>
               <span style={{ width: 30, height: 1, background: "#c8a96e", display: "inline-block" }} />
-              Available for opportunities
+              Open to new opportunities
             </div>
             <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(38px, 5vw, 58px)", lineHeight: 1.1, fontWeight: 700, marginBottom: "1.5rem", color: "#f8f6f1" }}>
               Crafting <em style={{ color: "#c8a96e", fontStyle: "italic" }}>digital</em><br />
               experiences that<br />matter.
             </h1>
             <p style={{ fontSize: 15, color: "#9ca3af", lineHeight: 1.9, maxWidth: 460, marginBottom: "2.5rem", fontWeight: 300 }}>
-              Software Developer specializing in React.js & TypeScript — turning complex ideas into scalable, high-performance web applications.
+              Software Developer building cross-platform mobile apps with Flutter and C#, backed by a strong React.js & TypeScript foundation — turning complex ideas into scalable, high-performance products.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <button
@@ -48,7 +48,7 @@ const About: React.FC = () => {
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #c8a96e, transparent)" }} />
             <div style={{ fontSize: 10, letterSpacing: "2px", textTransform: "uppercase", color: "#9ca3af", marginBottom: "1.5rem" }}>At a glance</div>
             {[
-              { num: "2+", label: "Years Experience", sub: "React · Node · TS" },
+              { num: "2+", label: "Years Experience", sub: "Flutter · C# · React" },
               { num: "30%", label: "Performance Gains", sub: "Delivered" },
               { num: "B.E", label: "Computer Science", sub: "JCET, Hubli" },
             ].map((s, i) => (
@@ -76,14 +76,14 @@ const About: React.FC = () => {
               I build things<br />for the <em style={{ color: "#c8a96e" }}>web.</em>
             </h2>
             <p style={{ fontSize: 14, color: "#9ca3af", lineHeight: 1.9, fontWeight: 300, marginBottom: "1.25rem" }}>
-              I'm a frontend developer with a passion for building clean, performant interfaces. I specialize in React.js ecosystems and love turning complex requirements into elegant solutions.
+              I'm a software developer with a passion for building clean, performant products. I started in the React.js ecosystem and now work on cross-platform mobile apps, turning complex requirements into elegant solutions.
             </p>
             <p style={{ fontSize: 14, color: "#9ca3af", lineHeight: 1.9, fontWeight: 300, marginBottom: "2rem" }}>
-              Currently at RedGreenBlue Pvt. Ltd., I've helped scale web platforms used by thousands — with a focus on developer experience and end-user delight.
+              Currently at SHLR Technosoft Pvt. Ltd., I build mobile apps with Flutter and C#, integrate and test REST APIs with Postman, implement push notifications via Firebase, and add location features using Flutter packages. Previously at RedGreenBlue Pvt. Ltd., I helped scale web platforms used by thousands.
             </p>
             <div style={{ fontSize: 10, letterSpacing: "2px", textTransform: "uppercase", color: "#c8a96e", marginBottom: "1rem" }}>Tech Stack</div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-              {["React.js", "TypeScript", "JavaScript", "Node.js", "TailwindCSS", "SCSS", "React Native", "SQL", "Git & GitHub"].map(skill => (
+              {["Flutter", "Dart", "C#", "REST APIs", "Postman", "Firebase", "React.js", "TypeScript", "JavaScript", "Node.js", "TailwindCSS", "SCSS", "React Native", "SQL", "Git & GitHub"].map(skill => (
                 <span key={skill} style={{ fontSize: 11, padding: "6px 14px", border: "1px solid rgba(200,169,110,0.2)", color: "#9ca3af", letterSpacing: "0.5px", transition: "all 0.2s", cursor: "default" }}
                   onMouseEnter={e => { e.currentTarget.style.borderColor = "#c8a96e"; e.currentTarget.style.color = "#c8a96e"; }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(200,169,110,0.2)"; e.currentTarget.style.color = "#9ca3af"; }}
@@ -93,7 +93,8 @@ const About: React.FC = () => {
           </div>
           <div>
             {[
-              { co: "RedGreenBlue Pvt. Ltd.", role: "Software Developer", date: "June 2024 — Present" },
+              { co: "SHLR Technosoft Pvt. Ltd.", role: "Software Developer — Mobile (Flutter, C#)", date: "April 2026 — Present" },
+              { co: "RedGreenBlue Pvt. Ltd.", role: "Software Developer", date: "June 2024 — Feb 2026" },
               { co: "Jain College of Engineering, Hubli", role: "B.E — Computer Science", date: "2019 — 2023" },
             ].map((e, i) => (
               <div key={i} style={{ padding: "1.5rem 0", borderBottom: "1px solid rgba(200,169,110,0.15)" }}>
@@ -118,9 +119,9 @@ const About: React.FC = () => {
               Let's work<br />together.
             </h2>
             <p style={{ fontSize: 14, color: "#9ca3af", lineHeight: 1.9, fontWeight: 300, marginBottom: "2rem" }}>
-              I'm open to full-time roles, freelance projects, and interesting collaborations. Feel free to reach out.
+              I'm open to freelance projects, interesting collaborations, and new roles. Feel free to reach out.
             </p>
-            {["Bengaluru, Karnataka, India", "Open to remote & on-site", "Available immediately"].map((item, i) => (
+            {["Bengaluru, Karnataka, India", "Open to remote & on-site", "Open to freelance & collaborations"].map((item, i) => (
               <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "1rem 0", borderBottom: "1px solid rgba(200,169,110,0.15)", color: "#9ca3af", fontSize: 13 }}>
                 <div style={{ width: 6, height: 6, background: "#c8a96e", borderRadius: "50%", flexShrink: 0 }} />
                 {item}
